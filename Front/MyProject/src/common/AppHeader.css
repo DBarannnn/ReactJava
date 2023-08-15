@@ -1,0 +1,20 @@
+.header{
+    background-color: #5DDA8E;
+    display: flex;   
+}
+
+.brand{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-text{
+    margin-left: 40px;
+    font-size: 24px;
+}
+
+.brand-img{
+    margin-left: 15px;
+    height: 3em;
+}
