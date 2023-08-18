@@ -1,0 +1,27 @@
+.home-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-greeting{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.home-text{
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;}
+
+.home-heading{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+.home-separator{
+        width: 100%;
+        height: 2px;
+}

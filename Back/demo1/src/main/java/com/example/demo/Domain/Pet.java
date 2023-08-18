@@ -24,6 +24,9 @@ public class Pet {
     @Column
     private String image;
 
+    @Column
+    private String description;
+
     @Transient
     private int years;
 

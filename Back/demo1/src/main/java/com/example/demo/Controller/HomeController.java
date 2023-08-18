@@ -7,21 +7,20 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
 
 @RestController
 @RequiredArgsConstructor
 public class HomeController {
-    private final PetRepository petRepository;
     private final PetService petService;
 
     @GetMapping("/home")
-    public Page<Pet> getPetsForHome(){
-        Pageable page = PageRequest.of(0, 2);
-        return petRepository.findAll(page);
+    public List<Pet> getPetsForHome(@RequestParam int count){
+        System.out.println("home call");
+        return petService.getLastPets(count);
     }
 
 

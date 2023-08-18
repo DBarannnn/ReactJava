@@ -8,13 +8,20 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class PetService {
     private final PetRepository petRepository;
 
-    public Page<Pet> getLastPets(int page, int pageSize){
-        Pageable pageable = PageRequest.of(page, pageSize);
-        return petRepository.findAll(pageable);
+    public List<Pet> getLastPets(int count){
+        if(count <= 0) count = 1;
+        List<Pet> all = petRepository.findAll();
+        if(all.size() > count){
+            return all.subList(0,count);
+        }
+        return all.subList(0,all.size());
     }
 }

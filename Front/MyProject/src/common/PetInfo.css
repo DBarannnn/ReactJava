@@ -1,0 +1,20 @@
+.container-pet{
+    display: flex;
+    margin-bottom:  30px;
+    align-items: flex-start;
+}
+
+.container-pet-details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+.pet-img{
+    width: 40vw;
+    height: auto;
+    border: 2px solid black;
+}

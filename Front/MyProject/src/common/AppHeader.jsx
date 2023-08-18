@@ -1,7 +1,6 @@
-import React from "react";
 import "./AppHeader.css";
 
-export default function(){
+export default function AppHeader(){
     return(
         <header className="header">
             <div className="brand">
