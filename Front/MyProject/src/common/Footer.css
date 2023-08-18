@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5DDA8E;
+    height: 40px;
+    width: 100%;
+}
+
+.footer-text{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 40px;
+}
+
+.footer-contacts{
+    padding-right: 40px;
+}
+
+.contact-img{
+    height: 40px;
+    width: 40px;
+    padding-right: 5px;
+}
