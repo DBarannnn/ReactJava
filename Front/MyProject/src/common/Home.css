@@ -1,8 +1,8 @@
+
 .home-container{
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .home-greeting{
@@ -12,7 +12,7 @@
 
 
 .home-text{
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: 'Lato', sans-serif;
     margin-bottom: 30px;
 }
@@ -21,7 +21,9 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 1.5em;
+    font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .home-separator{
@@ -34,4 +36,12 @@
     background-size: 1.1em;
     background-repeat: repeat-x; /* Repeat horizontally */
     background-position:initial; /* Align to the bottom right corner */
+}
+
+.home-subheading{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
