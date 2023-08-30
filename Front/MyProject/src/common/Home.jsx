@@ -9,10 +9,8 @@ export default function Home(){
         const [pets, setPets] = useState([]);
     
         useEffect(() => {
-          console.log("In use effect")
             fetchHomePets(5)
               .then(response => {
-                console.log("Fetched pets:", response);
                 setPets(response);
               })
               .catch(error => console.error("Error fetching home pets:", error));
